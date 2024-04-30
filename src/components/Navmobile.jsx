@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navmobile = () => {
   return (
-    <div>Navmobile</div>
+    <div className='flex md:hidden'>Navmobile</div>
   )
 }
 

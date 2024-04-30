@@ -10,6 +10,7 @@ import {
 
 import { Toaster } from "@/components/ui/sonner";
 import { toast } from "sonner";
+import Navmobile from "./Navmobile";
 
 const Navbar = () => {
   const alert = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
     <nav className="px-4 py-3 w-screen backdrop-blur-sm">
       <Toaster position="top-center" />
       <div>
-        <NavigationMenu>
+        <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <a href="/selfcheck1">
@@ -42,6 +43,7 @@ const Navbar = () => {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
+        <Navmobile />
       </div>
     </nav>
   );
