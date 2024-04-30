@@ -40,7 +40,7 @@ const Navbar = () => {
             </a>
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu> unnecessary
+      </NavigationMenu>
     </nav>
   );
 };
