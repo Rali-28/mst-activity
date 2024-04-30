@@ -22,17 +22,17 @@ const Navbar = () => {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
-            <a href="/activity1">
+            <a href="/selfcheck1">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Activity 2.1.1
+                Self-Check 2.1.1
               </NavigationMenuLink>
             </a>
               <NavigationMenuLink className={`cursor-pointer ${navigationMenuTriggerStyle()}`} onClick={alert}>
-                Activity 2.1.1
+                Self-Check 2.2.1
               </NavigationMenuLink>
-            <a href="/activity2-b">
+            <a href="/selfcheck2-b">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                Activity 2.1.1
+                Self-Check 2.2.2
               </NavigationMenuLink>
             </a>
           </NavigationMenuItem>
