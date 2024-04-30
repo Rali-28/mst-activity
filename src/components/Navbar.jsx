@@ -8,9 +8,17 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 
+import { Toaster } from "@/components/ui/sonner"
+import { toast } from "sonner"
+
 const Navbar = () => {
+  const alert = () => {
+    toast.error("Self-Check 2.2.1 not found in given module.")
+  }
+
   return (
     <nav>
+      <Toaster position="top-center" />
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -19,11 +27,9 @@ const Navbar = () => {
                 Activity 2.1.1
               </NavigationMenuLink>
             </a>
-            <a href="/activity2-a">
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink className={`cursor-pointer ${navigationMenuTriggerStyle()}`} onClick={alert}>
                 Activity 2.1.1
               </NavigationMenuLink>
-            </a>
             <a href="/activity2-b">
               <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                 Activity 2.1.1
