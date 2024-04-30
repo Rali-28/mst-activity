@@ -8,11 +8,12 @@ import {
 } from "@/components/ui/navigation-menu";
 import { links } from "./constants";
 import Navmobile from "./Navmobile";
+import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="px-4 py-3 w-screen backdrop-blur-sm">
-      <div>
+    <nav className="px-6 py-3 w-screen backdrop-blur-sm">
+      <div className="flex justify-between items-center">
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             {links.map((link) => (
@@ -24,7 +25,8 @@ const Navbar = () => {
             ))}
           </NavigationMenuList>
         </NavigationMenu>
-        <Navmobile />
+         <Navmobile />
+         <ModeToggle/>   
       </div>
     </nav>
   );
