@@ -23,7 +23,7 @@ const Navmobile = () => {
         <SheetTrigger><Menu /></SheetTrigger>
         <SheetContent side="left">
           <SheetHeader className="text-left">
-            <SheetTitle>MENU</SheetTitle>
+            <SheetTitle>Janaban</SheetTitle>
             <SheetDescription className="flex flex-col">
               {links.map((link) => (
                 <a key={link.index} href={link.link} className="pt-4">
