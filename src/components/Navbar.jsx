@@ -18,6 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-center items-center py-2 mx-auto w-11/12 bg-white backdrop-blur-sm">
+      
       <Toaster position="top-center" />
       <NavigationMenu>
         <NavigationMenuList>
