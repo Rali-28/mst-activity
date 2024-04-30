@@ -13,13 +13,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Menu } from "lucide-react";
 import { links } from "./constants";
 
 const Navmobile = () => {
   return (
     <div className="md:hidden">
       <Sheet side="left">
-        <SheetTrigger>Open</SheetTrigger>
+        <SheetTrigger><Menu /></SheetTrigger>
         <SheetContent side="left">
           <SheetHeader className="text-left">
             <SheetTitle>MENU</SheetTitle>
