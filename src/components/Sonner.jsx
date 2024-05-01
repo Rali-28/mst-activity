@@ -10,7 +10,7 @@ const Sonner = ({title , msg}) => {
         <Button
         variant="outline"
         onClick={() =>
-          toast(msg)
+          toast.error(msg)
         }
       >
         {title}
