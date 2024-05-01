@@ -12,7 +12,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/ui/sheet"
 import { Menu } from "lucide-react";
 import { links } from "./constants";
 
@@ -23,14 +23,15 @@ const Navmobile = () => {
         <SheetTrigger><Menu /></SheetTrigger>
         <SheetContent side="left">
           <SheetHeader className="text-left">
-            <SheetTitle>Janaban</SheetTitle>
-            <SheetDescription className="flex flex-col">
-              {links.map((link) => (
-                <a key={link.index} href={link.link} className="pt-4">
-                  {link.title}
-                </a>
-              ))}
-            </SheetDescription>
+            <SheetTitle className="mb-4">Janaban</SheetTitle>
+              <SheetDescription className="flex flex-col pl-6 text-base gap">
+                <span className="font-medium text-foreground">Activities</span>
+                {links.map((link) => (
+                  <a key={link.index} href={link.link} className="mt-3">
+                    {link.title}
+                  </a>
+                ))}
+              </SheetDescription>
           </SheetHeader>
         </SheetContent>
       </Sheet>
