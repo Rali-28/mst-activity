@@ -1,11 +1,5 @@
 import React from "react";
 import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import {
   Sheet,
   SheetContent,
   SheetDescription,
