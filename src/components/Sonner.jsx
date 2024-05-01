@@ -8,7 +8,6 @@ const Sonner = ({title , msg}) => {
     <div>
         <Toaster position='top-center' />
         <Button
-        variant="outline"
         onClick={() =>
           toast.error(msg)
         }
