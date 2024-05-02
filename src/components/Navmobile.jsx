@@ -17,7 +17,7 @@ const Navmobile = () => {
         <SheetTrigger><Menu /></SheetTrigger>
         <SheetContent side="left">
           <SheetHeader className="text-left">
-            <SheetTitle className="mb-4">Janaban</SheetTitle>
+            <a href="/"><SheetTitle className="mb-4">Janaban</SheetTitle></a>
               <SheetDescription className="flex flex-col pl-6 text-base gap">
                 <span className="font-medium text-foreground">Activities</span>
                 {links.map((link) => (
