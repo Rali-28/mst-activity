@@ -5,7 +5,7 @@ import { activity } from "./constants";
 
 const MultipleChoices = () => {
   return (
-    <div className="mx-auto w-2/3">
+    <div className="mx-auto w-2/3 md:w-1/2">
       <ol className="list-decimal">
         {activity.map((activity) => (
           <li key={activity.index} className="my-4">
