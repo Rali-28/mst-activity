@@ -8,10 +8,10 @@ const MultipleChoices = () => {
     <div className="mx-auto w-2/3">
       <ol className="list-decimal">
         {activity.map((activity) => (
-          <li key={activity.index}>
+          <li key={activity.index} className="my-4">
             <div>
               <span>{activity.question}</span>
-              <RadioGroup className="grid grid-cols-2 grid-rows-2 grid-flow-col">
+              <RadioGroup className="grid grid-cols-2 grid-rows-2 grid-flow-col pt-3">
                 
                 {Object.keys(activity.choices).map((key, index) => (
                   <div key={index} className="flex space-x-2">
