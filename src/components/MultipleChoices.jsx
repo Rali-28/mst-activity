@@ -1,6 +1,7 @@
 import React from "react";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Separator } from "@/components/ui/separator"
 import { activity } from "./constants";
 
 const MultipleChoices = () => {
@@ -29,10 +30,13 @@ const MultipleChoices = () => {
                     </Label>
                   </div>
                 ))}
+                
               </RadioGroup>
             </div>
+            <Separator className="my-4" />
           </li>
         ))}
+
       </ol>
     </div>
   );
