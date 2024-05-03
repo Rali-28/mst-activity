@@ -1,37 +1,39 @@
 import React from "react";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { activity } from "./constants";
 
 const MultipleChoices = () => {
   return (
-    <div className="mx-auto w-1/2">
-      <div>
-        <span>Text</span>
-        <RadioGroup defaultValue="comfortable">
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-one" id="option-one" disabled />
-            <Label htmlFor="option-one">Option 1</Label>
-          </div>
-
-          <div className="flex space-x-2">
-            <RadioGroupItem value="option-two" id="option-two" checked />
-            <Label htmlFor="option-two">Option 2</Label>
-          </div>
-
-          <div className="flex space-x-2">
-            <RadioGroupItem value="option-three" id="option-three" disabled />
-            <Label htmlFor="option-three">
-              Payag ka non, option ka langa sdsd sda das s asd asd sdasdaasd asd
-              das das?
-            </Label>
-          </div>
-
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-four" id="option-four" disabled />
-            <Label htmlFor="option-four">Payag ka non, option ka lang?</Label>
-          </div>
-        </RadioGroup>
-      </div>
+    <div className="mx-auto w-2/3">
+      <ol className="list-decimal">
+        {activity.map((activity) => (
+          <li key={activity.index}>
+            <div>
+              <span>{activity.question}</span>
+              <RadioGroup className="grid grid-cols-2 grid-rows-2 grid-flow-col">
+                
+                {Object.keys(activity.choices).map((key, index) => (
+                  <div key={index} className="flex space-x-2">
+                    <RadioGroupItem
+                      value={`option-${index + 1}`}
+                      id={`option-${index + 1}`}
+                      disabled={activity.choices[key].state === "disabled"}
+                      checked={activity.choices[key].state === "checked"}
+                    />
+                    <Label htmlFor={`option-${index + 1}`}>
+                      {key}.{" "}
+                      <span className="capitalize">
+                        {activity.choices[key].choice}
+                      </span>
+                    </Label>
+                  </div>
+                ))}
+              </RadioGroup>
+            </div>
+          </li>
+        ))}
+      </ol>
     </div>
   );
 };
