@@ -1,7 +1,40 @@
+export const imperialChart =[
+    {
+        index: 1,
+        material: "Mild Steel",
+        cs: "80 ft/min",
+    },
+    {
+        index: 2,
+        material: "Tool Steel",
+        cs: "60 ft/min",
+    },
+    {
+        index: 3,
+        material: "Stainless Steel",
+        cs: "50 ft/min",
+    },
+    {
+        index: 4,
+        material: "Cast Iron",
+        cs: "80 ft/min",
+    },
+    {
+        index: 5,
+        material: "Copper and Alloys of Copper",
+        cs: "200 ft/min",
+    },
+    {
+        index: 6,
+        material: "Aluminum and Alloys of Aluminum",
+        cs: "300 ft/min",
+    },
+]
+
 export const activity = [
   {
     index: 1,
-    instruction: "I.Calculate the RPM for the following materials in inch sizes:",
+    instruction: "Calculate the RPM for the following materials in inch sizes:",
     problem: {
         1: {material: "Material: Mild steel round bar 3/8\" diameter", ans: "N/A"},
         2: {material: "Material: Copper round bar 5/8\" diameter", ans: "N/A"},
@@ -12,7 +45,7 @@ export const activity = [
   },
   {
     index: 2,
-    instruction: "II.Calculate the RPM for the following materials in mm size:",
+    instruction: "Calculate the RPM for the following materials in mm size:",
     materials: {
         1: {material: "Material: Mild steel round bar 10mm diameter", ans: "N/A"},
         2: {material: "Material: Copper round bar 25mm diameter", ans: "N/A"},
