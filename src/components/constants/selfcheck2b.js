@@ -18,8 +18,8 @@ export const chart = [
   },
   {
     index: 1,
-    formula: "Metric",
-    measurementUnit: "",
+    formula: "",
+    measurementUnit: "Metric",
     tableData: [
       { index: 1, material: "Mild Steel", cs: "27 m/min" },
       { index: 2, material: "Tool Steel", cs: "20 m/min" },
