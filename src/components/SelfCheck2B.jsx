@@ -16,8 +16,13 @@ const SelfCheck2B = () => {
     <div className="mx-auto w-1/2">
       <ol className="list-[upper-roman]">
         {activity2b.map((activity) => (
-          <li key={activity.index}>
+          <li key={activity.index} className="mb-4">
             {activity.instruction}
+            <ol className="ml-4 list-decimal">
+              {Object.values(activity.problem).map((problem, index) => (
+                <li key={index}>{problem.material}</li>
+              ))}
+            </ol>
           </li>
         ))}
       </ol>
