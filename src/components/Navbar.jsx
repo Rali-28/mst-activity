@@ -12,7 +12,7 @@ import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="px-6 py-3 w-screen border-b-[1px] backdrop-blur-sm sticky top-0">
+    <nav className="px-6 py-3 w-screen border-b-[1px] backdrop-blur-sm sticky top-0 z-50">
       <div className="flex justify-between">
         <div className="hidden md:flex">
           <a href="/" className={navigationMenuTriggerStyle()}>Janaban</a>
