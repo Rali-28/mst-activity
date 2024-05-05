@@ -2,7 +2,7 @@ export const chart = [
   {
     index: 1,
     formula: "",
-    imperial: [
+    tableData: [
       { index: 1, material: "Mild Steel", cs: "80 ft/min" },
       { index: 2, material: "Tool Steel", cs: "60 ft/min" },
       { index: 3, material: "Stainless Steel", cs: "50 ft/min" },
@@ -18,7 +18,7 @@ export const chart = [
   {
     index: 1,
     formula: "",
-    metric: [
+    tableData: [
       { index: 1, material: "Mild Steel", cs: "27 m/min" },
       { index: 2, material: "Tool Steel", cs: "20 m/min" },
       { index: 3, material: "Stainless Steel", cs: "17 m/min" },
