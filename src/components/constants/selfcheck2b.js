@@ -17,7 +17,7 @@ export const chart = [
     ],
   },
   {
-    index: 1,
+    index: 2,
     formula: "",
     measurementUnit: "Metric",
     tableData: [
