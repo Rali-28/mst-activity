@@ -57,7 +57,7 @@ export const activity2b = [
   {
     index: 2,
     instruction: "Calculate the RPM for the following materials in mm size:",
-    materials: {
+    problem: {
       1: {
         material: "Material: Mild steel round bar 10mm diameter",
         ans: "N/A",
