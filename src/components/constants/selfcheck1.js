@@ -1,4 +1,4 @@
-export const activity = [
+export const activity1 = [
   {
     index: 1,
     question:

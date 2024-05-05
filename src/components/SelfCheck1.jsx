@@ -2,13 +2,13 @@ import React from "react";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Separator } from "@/components/ui/separator"
-import { activity } from "./constants";
+import { activity1 } from "./constants";
 
 const MultipleChoices = () => {
   return (
     <div className="mx-auto w-2/3 md:w-1/2">
       <ol className="list-decimal">
-        {activity.map((activity) => (
+        {activity1.map((activity) => (
           <li key={activity.index} className="my-4">
             <div>
               <span>{activity.question}</span>

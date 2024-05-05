@@ -33,7 +33,7 @@ export const chart = [
   },
 ];
 
-export const activity = [
+export const activity2b = [
   {
     index: 1,
     instruction: "Calculate the RPM for the following materials in inch sizes:",
