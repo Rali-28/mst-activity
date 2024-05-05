@@ -7,6 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
+  TableFooter
 } from "@/components/ui/table";
 
 const SelfCheck2B = () => {
@@ -35,6 +36,16 @@ const SelfCheck2B = () => {
                 <TableCell className="border-x-[1px]">cs2</TableCell>
               </TableRow>
             </TableBody>
+            <TableFooter>
+              <TableRow className="text-right">
+                  <TableCell>
+                    Formula:
+                  </TableCell>
+                  <TableCell className="flex justify-start">
+                    \[a^2 + b^2 = c^2\]
+                  </TableCell>
+              </TableRow>
+            </TableFooter>
           </Table>
           <ol className="ml-4 list-decimal">
             <li>Item 1</li>
@@ -67,6 +78,16 @@ const SelfCheck2B = () => {
                 <TableCell className="border-x-[1px]">cs2</TableCell>
               </TableRow>
             </TableBody>
+            <TableFooter>
+              <TableRow className="text-right">
+                  <TableCell>
+                    Formula:
+                  </TableCell>
+                  <TableCell className="flex justify-start">
+                    \[a^2 + b^2 = c^2\]
+                  </TableCell>
+              </TableRow>
+            </TableFooter>
           </Table>
           <ol className="ml-4 list-decimal">
             <li>Item 1</li>
