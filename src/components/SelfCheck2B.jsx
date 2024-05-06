@@ -18,7 +18,10 @@ const SelfCheck2B = () => {
           Header 1
           <Table>
             <TableCaption>
-              Imperial Material List and cutting speed
+              <p>
+                Imperial Measurement of Material List and Cutting Speed <br />
+                (Note: Cutting speeds for tools of High Carbon Steel is ½ of CS for HSS) 
+              </p>
             </TableCaption>
             <TableHeader>
               <TableRow>
@@ -58,7 +61,8 @@ const SelfCheck2B = () => {
           Header 2
           <Table>
             <TableCaption>
-              Imperial Material List and cutting speed
+              Metric Measurements of Material List and Cutting Speed
+              (Note: Cutting speeds for tools of High Carbon Steel is ½ of CS for HSS) 
             </TableCaption>
             <TableHeader>
               <TableRow>
