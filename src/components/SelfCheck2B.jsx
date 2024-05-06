@@ -39,7 +39,7 @@ const SelfCheck2B = () => {
                 <TableCell className="border-x-[1px]">cs2</TableCell>
               </TableRow>
             </TableBody>
-            <TableFooter>
+            <TableFooter className="border-[1px]">
               <TableRow className="text-right">
                 <TableCell>Formula:</TableCell>
                 <TableCell className="flex justify-start items-center">
@@ -80,7 +80,7 @@ const SelfCheck2B = () => {
                 <TableCell className="border-x-[1px]">cs2</TableCell>
               </TableRow>
             </TableBody>
-            <TableFooter>
+            <TableFooter className="border-[1px]">
               <TableRow className="text-right">
                 <TableCell>Formula:</TableCell>
                 <TableCell className="flex justify-start items-center">
