@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Table,
   TableBody,
@@ -7,7 +7,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-  TableFooter
+  TableFooter,
 } from "@/components/ui/table";
 
 const SelfCheck2B = () => {
@@ -38,12 +38,10 @@ const SelfCheck2B = () => {
             </TableBody>
             <TableFooter>
               <TableRow className="text-right">
-                  <TableCell>
-                    Formula:
-                  </TableCell>
-                  <TableCell className="flex justify-start">
-                    \[a^2 + b^2 = c^2\]
-                  </TableCell>
+                <TableCell>Formula:</TableCell>
+                <TableCell className="flex justify-start items-center">
+                \[RPM =   \]\[cs * 4 \over diamater  \]
+                </TableCell>
               </TableRow>
             </TableFooter>
           </Table>
@@ -80,12 +78,10 @@ const SelfCheck2B = () => {
             </TableBody>
             <TableFooter>
               <TableRow className="text-right">
-                  <TableCell>
-                    Formula:
-                  </TableCell>
-                  <TableCell className="flex justify-start">
-                    \[a^2 + b^2 = c^2\]
-                  </TableCell>
+                <TableCell>Formula:</TableCell>
+                <TableCell className="flex justify-start items-center">
+                \[RPM =   \]\[cs * 1000 \over \pi * diamater  \]
+                </TableCell>
               </TableRow>
             </TableFooter>
           </Table>
