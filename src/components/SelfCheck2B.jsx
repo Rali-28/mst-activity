@@ -9,6 +9,7 @@ import {
   TableRow,
   TableFooter,
 } from "@/components/ui/table";
+import {chart , activity} from "./constants"
 
 const SelfCheck2B = () => {
   return (
