@@ -13,7 +13,7 @@ import { activity2b } from "./constants/";
 
 const SelfCheck2B = () => {
   return (
-    <div className="w-1/2 mx-auto">
+    <div className="w-3/4 mx-auto md:w-1/2">
       <ol className="list-[upper-roman]">
         {activity2b.map((activity) => (
           <li key={activity.index} className="mb-4">
@@ -57,8 +57,10 @@ const SelfCheck2B = () => {
             <ol className="ml-4 list-decimal">
               {Object.values(activity.problem).map((problem, index) => (
                 <li key={index}>
-                  <div>{problem.material}</div>
-                  <div>{problem.ans}</div>
+                  <p>{problem.material}</p>
+                  <p className="flex items-center justify-start gap-1 text-sm">
+                  <span className="text-base">Answer:</span> {problem.ans}
+                  </p>
                 </li>
               ))}
             </ol>
