@@ -2,7 +2,7 @@ export const activity2b = [
   {
     index: 1,
     instruction: "Calculate the RPM for the following materials in inch sizes:",
-    formula: <>\[RPM = \]\[cs * 4 \over 4  diamater \]</>,
+    formula: <>\[RPM = \]\[cs * 4 \over diamater \]</>,
     measurementUnit: "Imperial",
     problem: [
       {
