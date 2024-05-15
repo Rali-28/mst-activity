@@ -9,109 +9,61 @@ import {
   TableRow,
   TableFooter,
 } from "@/components/ui/table";
-import { chart, activity2b } from "./constants/";
+import { activity2b } from "./constants/";
 
 const SelfCheck2B = () => {
   return (
-    <div className="mx-auto w-1/2">
+    <div className="w-1/2 mx-auto">
       <ol className="list-[upper-roman]">
         {activity2b.map((activity) => (
           <li key={activity.index} className="mb-4">
             {activity.instruction}
+            <Table className="my-4">
+              <TableCaption>
+                <p>
+                  {activity.measurementUnit} of Material List and Cutting Speed{" "}
+                  <br />
+                  (Note: Cutting speeds for tools of High Carbon Steel is ½ of
+                  CS for HSS)
+                </p>
+              </TableCaption>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="w-1/2 text-center">Material</TableHead>
+                  <TableHead className="text-center">Cutting Speed</TableHead>
+                </TableRow>
+              </TableHeader>
+
+              <TableBody>
+                {Object.values(activity.tableData).map((data, index) => (
+                  <TableRow key={index}>
+                    <TableCell className="border-x-[1px]">
+                      {data.material}
+                    </TableCell>
+                    <TableCell className="border-x-[1px]">{data.cs}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+              <TableFooter className="border-[1px]">
+                <TableRow className="text-right">
+                  <TableCell>Formula:</TableCell>
+                  <TableCell className="flex items-center justify-start">
+                    {activity.formula}
+                  </TableCell>
+                </TableRow>
+              </TableFooter>
+            </Table>
+
             <ol className="ml-4 list-decimal">
               {Object.values(activity.problem).map((problem, index) => (
-                <li key={index}>{problem.material}</li>
+                <li key={index}>
+                  <div>{problem.material}</div>
+                    <div>{problem.ans}</div>
+                </li>
               ))}
             </ol>
           </li>
         ))}
-      </ol>
-      <ol className="list-[upper-roman]">
-        <li className="mb-4">
-          Header 1
-          <Table>
-            <TableCaption>
-              <p>
-                Imperial Measurement of Material List and Cutting Speed <br />
-                (Note: Cutting speeds for tools of High Carbon Steel is ½ of CS
-                for HSS)
-              </p>
-            </TableCaption>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-1/2 text-center">Material</TableHead>
-                <TableHead className="text-center">Cutting Speed</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="border-x-[1px]">mat1</TableCell>
-                <TableCell className="border-x-[1px]">cs1</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="border-x-[1px]">mat2</TableCell>
-                <TableCell className="border-x-[1px]">cs2</TableCell>
-              </TableRow>
-            </TableBody>
-            <TableFooter className="border-[1px]">
-              <TableRow className="text-right">
-                <TableCell>Formula:</TableCell>
-                <TableCell className="flex justify-start items-center">
-                  \[RPM = \]\[cs * 4 \over diamater \]
-                </TableCell>
-              </TableRow>
-            </TableFooter>
-          </Table>
-          <ol className="ml-4 list-decimal">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-            <li>Item 6</li>
-          </ol>
-        </li>
-        <li className="mb-4">
-          Header 2
-          <Table>
-            <TableCaption>
-              Metric Measurements of Material List and Cutting Speed (Note:
-              Cutting speeds for tools of High Carbon Steel is ½ of CS for HSS)
-            </TableCaption>
-            <TableHeader>
-              <TableRow>
-                <TableHead className="w-1/2 text-center">Material</TableHead>
-                <TableHead className="text-center">Cutting Speed</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              <TableRow>
-                <TableCell className="border-x-[1px]">mat1</TableCell>
-                <TableCell className="border-x-[1px]">cs1</TableCell>
-              </TableRow>
-              <TableRow>
-                <TableCell className="border-x-[1px]">mat2</TableCell>
-                <TableCell className="border-x-[1px]">cs2</TableCell>
-              </TableRow>
-            </TableBody>
-            <TableFooter className="border-[1px]">
-              <TableRow className="text-right">
-                <TableCell>Formula:</TableCell>
-                <TableCell className="flex justify-start items-center">
-                  \[RPM = \]\[cs * 1000 \over \pi * diamater \]
-                </TableCell>
-              </TableRow>
-            </TableFooter>
-          </Table>
-          <ol className="ml-4 list-decimal">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 5</li>
-            <li>Item 6</li>
-          </ol>
-        </li>
       </ol>
     </div>
   );
