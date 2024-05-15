@@ -3,7 +3,7 @@ export const activity2b = [
     index: 1,
     instruction: "Calculate the RPM for the following materials in inch sizes:",
     formula: <>\[RPM = \]\[cs * 4 \over diameter \]</>,
-    measurementUnit: "Imperial",
+    measurementUnit: "English",
     problem: [
       {
         material: 'Material: Mild steel round bar 3/8" diameter',
