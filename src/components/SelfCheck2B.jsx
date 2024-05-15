@@ -58,7 +58,7 @@ const SelfCheck2B = () => {
               {Object.values(activity.problem).map((problem, index) => (
                 <li key={index}>
                   <div>{problem.material}</div>
-                    <div>{problem.ans}</div>
+                  <div>{problem.ans}</div>
                 </li>
               ))}
             </ol>
