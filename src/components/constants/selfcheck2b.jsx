@@ -46,14 +46,23 @@ export const activity2b = [
     problem: [
       {
         material: "Material: Mild steel round bar 10mm diameter",
-        ans: <></>,
+        ans: <>\[RPM = \]\[27 * 1000 \over \pi * 10 \] \[= 859.44 rpm\]</>,
       },
-      { material: "Material: Copper round bar 25mm diameter", ans: <></> },
-      { material: "Material: Aluminum round bar 16mm diameter", ans: <></> },
-      { material: "Material: Cast iron round bar 8mm diameter", ans: <></> },
+      {
+        material: "Material: Copper round bar 25mm diameter",
+        ans: <>\[RPM = \]\[67 * 1000 \over \pi * 25 \] \[= 853.07 rpm\]</>,
+      },
+      {
+        material: "Material: Aluminum round bar 16mm diameter",
+        ans: <>\[RPM = \]\[100 * 1000 \over \pi * 16 \] \[= 1989.44 rpm\]</>,
+      },
+      {
+        material: "Material: Cast iron round bar 8mm diameter",
+        ans: <>\[RPM = \]\[27 * 1000 \over \pi * 8 \] \[= 1'074.29 rpm\]</>,
+      },
       {
         material: "Material: Tool steel round bar 14mm diameter",
-        ans: <></>,
+        ans: <>\[RPM = \]\[20 * 1000 \over \pi * 14 \] \[= 454.73 rpm\]</>,
       },
     ],
     tableData: [
