@@ -6,13 +6,13 @@ import { activity1 } from "./constants";
 
 const MultipleChoices = () => {
   return (
-    <div className="mx-auto w-2/3 md:w-1/2">
+    <div className="w-3/4 mx-auto md:w-1/2">
       <ol className="list-decimal">
         {activity1.map((activity) => (
           <li key={activity.index} className="my-4">
             <div>
               <span>{activity.question}</span>
-              <RadioGroup className="grid grid-cols-2 grid-rows-2 grid-flow-col pt-3">
+              <RadioGroup className="grid grid-flow-col grid-cols-2 grid-rows-2 pt-3">
                 
                 {Object.keys(activity.choices).map((key, index) => (
                   <div key={index} className="flex space-x-2">
