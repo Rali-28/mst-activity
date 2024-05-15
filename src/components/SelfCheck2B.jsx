@@ -21,7 +21,7 @@ const SelfCheck2B = () => {
             <Table className="my-4">
               <TableCaption>
                 <p>
-                  {activity.measurementUnit} of Material List and Cutting Speed{" "}
+                  {activity.measurementUnit} Measurement of Material List and Cutting Speed{" "}
                   <br />
                   (Note: Cutting speeds for tools of High Carbon Steel is ½ of
                   CS for HSS)
